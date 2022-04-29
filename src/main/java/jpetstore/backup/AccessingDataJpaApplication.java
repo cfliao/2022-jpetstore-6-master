@@ -1,10 +1,16 @@
 package jpetstore.backup;
 
+import jpetstore.domain.Category;
+import jpetstore.repository.CategoryRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.annotation.Bean;
+
+import java.util.Optional;
 
 @SpringBootApplication
 public class AccessingDataJpaApplication {
@@ -29,10 +35,10 @@ public class AccessingDataJpaApplication {
 //            log.info("");
 //
 //            // fetch an individual customer by ID
-//            Category category = repository.findByCategoryId("FISH");
+//            Optional<Category> category = repository.findById("FISH");
 //            log.info("Category found with findById:");
 //            log.info("--------------------------------");
-//            log.info(category.toString());
+//            log.info(category.get().toString());
 //            log.info("");
 //        };
 //    }

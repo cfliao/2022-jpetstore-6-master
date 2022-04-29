@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-//@Service("catalogService1")
+@Service("catalogService")
 public class CatalogService {
 
     private static final Logger log = LoggerFactory.getLogger(CatalogService.class);
@@ -79,7 +79,7 @@ public class CatalogService {
         return categoryRepository.findById(categoryId);
     }
 
-    private void test() {
+    void test() {
 //        log.info("-------------------------------");
 //        for (Category category : getCategoryList()) {
 //            log.info(category.toString());
