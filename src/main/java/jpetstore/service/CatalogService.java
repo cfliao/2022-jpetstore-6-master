@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Service("catalogService")
+//@Service("catalogService")//prevent name conflict
 public class CatalogService {
 
     private static final Logger log = LoggerFactory.getLogger(CatalogService.class);
